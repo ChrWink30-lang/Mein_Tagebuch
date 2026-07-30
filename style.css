@@ -1,113 +1,149 @@
 body{
 
 margin:0;
-background:#ead8bd;
+background:#d9c3a5;
 font-family:Arial;
 
 }
 
 
-.book{
+.app{
 
-max-width:500px;
+max-width:430px;
 margin:auto;
-background:#fffdf8;
-min-height:100vh;
-padding:20px;
-
-}
-
-
-.cover{
-
-background:#704214;
-color:white;
-padding:40px;
-border-radius:15px;
-text-align:center;
-
-}
-
-
-input,
-textarea{
-
-width:100%;
-padding:14px;
-margin-top:10px;
-font-size:16px;
-border-radius:10px;
-border:1px solid #ccc;
-
-}
-
-
-textarea{
-
-height:180px;
-
-}
-
-
-
-button,
-.upload{
-
-width:100%;
 padding:15px;
-margin-top:10px;
-background:#8b5e3c;
-color:white;
-border:0;
-border-radius:12px;
-font-size:17px;
-display:block;
-text-align:center;
 
 }
-
-
-
-.upload input{
-
-display:none;
-
-}
-
-
-#vorschau{
-
-width:100%;
-margin-top:15px;
-border-radius:10px;
-display:none;
-
-}
-
 
 
 .seite{
 
-background:white;
-padding:15px;
-margin-top:15px;
-border-radius:10px;
-border:1px solid #ddd;
+background:#fffaf0;
+
+height:650px;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 30px #555;
+
+padding:25px;
+
+position:relative;
+
+overflow:hidden;
 
 }
 
 
 
-.seite img{
+h1{
+
+text-align:center;
+
+color:#704214;
+
+}
+
+
+
+#name{
 
 width:100%;
-border-radius:10px;
+
+border:none;
+
+border-bottom:1px solid #aaa;
+
+font-size:18px;
+
+background:none;
 
 }
 
 
-.loeschen{
 
-background:#b22222;
+#datum{
+
+margin-top:15px;
+
+color:#777;
+
+}
+
+
+
+textarea{
+
+position:absolute;
+
+left:25px;
+right:25px;
+top:150px;
+
+height:180px;
+
+border:none;
+
+resize:none;
+
+font-size:18px;
+
+background:transparent;
+
+}
+
+
+
+#bild{
+
+position:absolute;
+
+width:150px;
+
+display:none;
+
+touch-action:none;
+
+}
+
+
+
+button{
+
+width:100%;
+
+margin-top:10px;
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+background:#704214;
+
+color:white;
+
+font-size:18px;
+
+}
+
+
+
+.steuerung{
+
+display:flex;
+
+gap:10px;
+
+align-items:center;
+
+}
+
+
+.steuerung button{
+
+width:80px;
 
 }
