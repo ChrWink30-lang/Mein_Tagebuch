@@ -1,43 +1,113 @@
-body {
+body{
 
-background:#f3e8d0;
-font-family:Arial;
 margin:0;
+background:#ead8bd;
+font-family:Arial;
+
 }
 
 
-.book {
+.book{
 
 max-width:500px;
 margin:auto;
-background:white;
+background:#fffdf8;
 min-height:100vh;
 padding:20px;
-box-sizing:border-box;
 
 }
 
 
-h1 {
+.cover{
 
+background:#704214;
+color:white;
+padding:40px;
+border-radius:15px;
 text-align:center;
-color:#5b3825;
 
 }
 
 
-button {
+input,
+textarea{
+
+width:100%;
+padding:14px;
+margin-top:10px;
+font-size:16px;
+border-radius:10px;
+border:1px solid #ccc;
+
+}
+
+
+textarea{
+
+height:180px;
+
+}
+
+
+
+button,
+.upload{
 
 width:100%;
 padding:15px;
-margin-top:15px;
-border:none;
-border-radius:10px;
-
+margin-top:10px;
 background:#8b5e3c;
 color:white;
-
-font-size:18px;
+border:0;
+border-radius:12px;
+font-size:17px;
+display:block;
+text-align:center;
 
 }
 
+
+
+.upload input{
+
+display:none;
+
+}
+
+
+#vorschau{
+
+width:100%;
+margin-top:15px;
+border-radius:10px;
+display:none;
+
+}
+
+
+
+.seite{
+
+background:white;
+padding:15px;
+margin-top:15px;
+border-radius:10px;
+border:1px solid #ddd;
+
+}
+
+
+
+.seite img{
+
+width:100%;
+border-radius:10px;
+
+}
+
+
+.loeschen{
+
+background:#b22222;
+
+}
