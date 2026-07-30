@@ -10,8 +10,10 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- PDF Bibliothek -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 
 </head>
 
@@ -19,39 +21,59 @@
 <body>
 
 
-<div class="book">
+<div class="app">
 
 
-<div class="cover">
+<div id="buch" class="seite">
+
 
 <h1>Mein Tagebuch</h1>
 
-<p>Meine Erinnerungen</p>
+<input id="name"
+placeholder="Dein Name">
+
+
+<div id="datum"></div>
+
+
+
+<textarea id="text"
+placeholder="Schreibe hier..."></textarea>
+
+
+
+<img id="bild">
+
 
 </div>
 
 
 
-<input id="titel" placeholder="Titel">
-
-<input id="datum" type="date">
+<div class="steuerung">
 
 
-<textarea id="text"
-placeholder="Schreibe deinen Eintrag..."></textarea>
+<button onclick="zurueck()">
+◀
+</button>
 
 
-<label class="upload">
+<span id="anzeige">
+1 / 1
+</span>
 
+
+<button onclick="weiter()">
+▶
+</button>
+
+
+</div>
+
+
+
+<button onclick="bildHinzufuegen()">
 📷 Bild hinzufügen
-
-<input id="bild" type="file" accept="image/*">
-
-</label>
-
-
-<img id="vorschau">
-
+</button>
 
 
 <button onclick="speichern()">
@@ -59,17 +81,16 @@ placeholder="Schreibe deinen Eintrag..."></textarea>
 </button>
 
 
-<button onclick="pdfErstellen()">
-📄 Als PDF herunterladen
+<button onclick="screenshot()">
+📸 Seite speichern
 </button>
 
 
-
-<h2>Meine Seiten</h2>
-
-
-<div id="seiten"></div>
-
+<input 
+type="file"
+id="datei"
+accept="image/*"
+hidden>
 
 
 </div>
