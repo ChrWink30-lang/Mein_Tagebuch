@@ -1,1 +1,43 @@
+body {
+
+background:#f3e8d0;
+font-family:Arial;
+margin:0;
+}
+
+
+.book {
+
+max-width:500px;
+margin:auto;
+background:white;
+min-height:100vh;
+padding:20px;
+box-sizing:border-box;
+
+}
+
+
+h1 {
+
+text-align:center;
+color:#5b3825;
+
+}
+
+
+button {
+
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+
+background:#8b5e3c;
+color:white;
+
+font-size:18px;
+
+}
 
