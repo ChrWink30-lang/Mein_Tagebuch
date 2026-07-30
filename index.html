@@ -2,12 +2,16 @@
 <html lang="de">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mein Tagebuch</title>
 
 <link rel="stylesheet" href="style.css">
+
+<!-- PDF Bibliothek -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 </head>
 
@@ -17,14 +21,55 @@
 
 <div class="book">
 
+
+<div class="cover">
+
 <h1>Mein Tagebuch</h1>
 
-<button onclick="neueSeite()">
-Neue Seite
+<p>Meine Erinnerungen</p>
+
+</div>
+
+
+
+<input id="titel" placeholder="Titel">
+
+<input id="datum" type="date">
+
+
+<textarea id="text"
+placeholder="Schreibe deinen Eintrag..."></textarea>
+
+
+<label class="upload">
+
+📷 Bild hinzufügen
+
+<input id="bild" type="file" accept="image/*">
+
+</label>
+
+
+<img id="vorschau">
+
+
+
+<button onclick="speichern()">
+💾 Speichern
 </button>
 
 
-<div id="seitenListe"></div>
+<button onclick="pdfErstellen()">
+📄 Als PDF herunterladen
+</button>
+
+
+
+<h2>Meine Seiten</h2>
+
+
+<div id="seiten"></div>
+
 
 
 </div>
@@ -35,4 +80,3 @@ Neue Seite
 </body>
 
 </html>
-
